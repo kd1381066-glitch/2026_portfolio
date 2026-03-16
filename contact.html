@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>MIKIHONOKA</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/destyle.css"><!-- CSSリセット（先に読み込む） -->
+    <link rel="stylesheet" href="css/style.css"><!-- CSS→JSの順で書く -->
+</head>
+
+<body class="page-home">
+    <header>
+        <button class="hamburger">
+            <span class="inner">
+                <span class="bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <p class="text">MENU</p>
+            </span>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li class="menu-item"><a href="index.html">Top<span>トップ</span></a></li>
+                <li class="menu-item"><a href="works/index.html">Works<span>制作物一覧</span></a></li>
+                <li class="menu-item"><a href="about.html">About<span>私について</span></a></li>
+                <li class="menu-item"><a href="index.html#contact">Contact<span>お問い合わせ</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact_form">
+            <div class="contact_form_inner">
+                <h2 class="contact_form_title">Contact</h2>
+                <p class="contact_form_text">
+                    お問い合わせ内容を下記フォームへご記入ください。
+                </p>
+                <form action="https://formspree.io/f/xaqpbpje" method="POST" class="contact_form">
+                    <div class="form_item">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form_item">
+                        <label for="name">企業名 (特にない場合はなしとご記入ください)</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form_item">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form_item">
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="form_btn">
+                        <button type="submit">送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_inner">
+            <nav class="footer_nav">
+                <ul class="footer_nav_list">
+                    <li class="footer_nav_item"><a href="index.html">Top<span>トップ</span></a></li>
+                    <li class="footer_nav_item"><a href="works/index.html">Works<span>制作物一覧</span></a></li>
+                    <li class="footer_nav_item"><a href="about.html">About<span>私について</span></a></li>
+                    <li class="footer_nav_item"><a href="index.html#contact">Contact<span>お問い合わせ</span></a></li>
+                </ul>
+            </nav>
+            <p class="footer_copy">&copy; 2026 MIKI HONOKA All Rights Reserved.</p>
+            <div class="footer_pagetop"><a href="#top" class="footer_pagetop_link">Page Top</a></div>
+        </div>
+    </footer>
+</body>
+<script src="js/script.js" defer></script>
+
+</html>
